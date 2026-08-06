@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simple Plek",
-  description: "Unique packages for inaccesible locations",
+  title: "Servy",
+  description: "Gigs for professionals",
 };
 
 export default function RootLayout({
