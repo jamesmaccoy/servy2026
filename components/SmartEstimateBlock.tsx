@@ -352,7 +352,7 @@ export default function SmartEstimateBlock({
         {/* Date Selections */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="mb-1 block text-xs text-white/50">Check-in Date *</label>
+            <label className="mb-1 block text-xs text-white/50">When *</label>
             <input
               type="date"
               value={customFromDate}

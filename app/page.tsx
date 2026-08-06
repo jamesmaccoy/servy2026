@@ -389,7 +389,7 @@ function HomePageContent() {
                 Find Your Pro
               </h1>
               <p className="max-w-md text-sm leading-relaxed text-muted-foreground text-pretty">
-                Sync your travel dates once, then browse every listing with live pricing for your stay.
+                Sync your gig dates once, then browse every listing with pricing for your pro.
               </p>
             </>
           )}
@@ -456,7 +456,7 @@ function HomePageContent() {
           <Card size="sm" className="shadow-lg">
             <CardContent className="flex flex-col gap-3 sm:flex-row sm:items-end">
               <Field className="flex-1">
-                <FieldLabel htmlFor="from-date">Check-in date</FieldLabel>
+                <FieldLabel htmlFor="from-date">When</FieldLabel>
                 <Input
                   id="from-date"
                   type="date"
@@ -620,7 +620,7 @@ function HomePageContent() {
                       <CardDescription>
                         {isHourly
                           ? "Book a single time slot"
-                          : `Priced per night for your synced window`}
+                          : `Priced per day for your synced window`}
                       </CardDescription>
                     </CardHeader>
 
@@ -680,7 +680,7 @@ function HomePageContent() {
                     <CardFooter className="justify-between">
                       <div className="flex flex-col gap-0.5">
                         <span className="text-xs text-muted-foreground">
-                          {isHourly ? "Hourly rate" : "Nightly rate"}
+                          {isHourly ? "Hourly rate" : "Daily rate"}
                         </span>
                         <span className="font-heading text-base font-semibold">
                           R {p.basePricePerNight.toLocaleString()}

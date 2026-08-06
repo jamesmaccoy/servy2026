@@ -288,7 +288,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
         </EmptyHeader>
         <Button nativeButton={false} render={<Link href="/" />}>
           <ArrowLeftIcon data-icon="inline-start" />
-          Back to all destinations
+          Back to all pros
         </Button>
       </Empty>
     );
@@ -317,7 +317,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
       <div>
         <Button variant="ghost" size="sm" nativeButton={false} render={<Link href="/" />}>
           <ArrowLeftIcon data-icon="inline-start" />
-          Back to all destinations
+          Back to all pros
         </Button>
       </div>
 
@@ -388,7 +388,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
               <div className="grid grid-cols-2 gap-4 py-4">
                 <div className="flex flex-col gap-1">
                   <span className="text-xs text-muted-foreground">
-                    {property.bookingType === "hourly" ? "Hourly slot price" : "Nightly base rate"}
+                    {property.bookingType === "hourly" ? "Hourly slot price" : "Daily base rate"}
                   </span>
                   <p className="font-heading text-2xl font-semibold">
                     R {property.basePricePerNight.toLocaleString()}
@@ -407,7 +407,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
 
               {/* Description */}
               <div className="flex flex-col gap-1.5 pt-4">
-                <span className="text-xs text-muted-foreground">About this property</span>
+                <span className="text-xs text-muted-foreground">About this pro</span>
                 <p className="text-sm leading-relaxed whitespace-pre-line text-pretty">
                   {property.description ||
                     "Experience Llandudno at its finest. This property features coastline scenery, proximity to the beach, luxury amenities, and private decks. Connect package options and add-ons at checkout."}
@@ -468,7 +468,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
             <CardHeader className="border-b">
               <CardTitle className="flex items-center gap-2">
                 <CalendarIcon className="size-4 text-muted-foreground" />
-                Stay planner
+                Pro planner
               </CardTitle>
             </CardHeader>
 
@@ -514,7 +514,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
                   <div className="flex flex-col gap-2.5 rounded-lg border bg-muted/40 p-4">
                     <div className="flex items-start justify-between gap-3 text-sm">
                       <span className="text-muted-foreground">
-                        {property.bookingType === "hourly" ? "Selected slot" : "Selected stay"}
+                        {property.bookingType === "hourly" ? "Selected slot" : "When"}
                       </span>
                       <span className="text-right font-medium">
                         {property.bookingType === "hourly" ? (
@@ -577,7 +577,7 @@ function PropertyDetailsContent({ slug }: PropertyDetailsContentProps) {
                     className="w-full"
                     onClick={() => setSavedDates(null)}
                   >
-                    Change stay dates
+                    Change gig dates
                   </Button>
                 </div>
               ) : (

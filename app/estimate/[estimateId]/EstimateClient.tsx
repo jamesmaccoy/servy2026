@@ -323,7 +323,7 @@ function EstimateClientContent({ estimate, property, selectedPackage }: Estimate
       <header className="flex flex-col gap-4 border-b pb-6 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-1">
           <span className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
-            Stay estimate
+            Gig estimate
           </span>
           <h1 className="font-heading text-3xl font-semibold tracking-tight text-balance">
             Estimate for {property?.title || "Llandudno"}
@@ -348,8 +348,8 @@ function EstimateClientContent({ estimate, property, selectedPackage }: Estimate
                     {estimate.propertyId === "shack"
                       ? "Beach Shack"
                       : estimate.propertyId === "cottage"
-                        ? "Cozy Cottage"
-                        : "Luxury Villa"}
+                        ? "Standard"
+                        : "Professional"}
                   </Badge>
                   <CardTitle className="text-lg">
                     {property?.title || "Llandudno Property"}
@@ -494,7 +494,7 @@ function EstimateClientContent({ estimate, property, selectedPackage }: Estimate
 
                 <div className="flex flex-1 flex-col gap-1.5">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-heading text-sm font-medium">Standard stay</span>
+                    <span className="font-heading text-sm font-medium">Standard gig</span>
                     <Badge variant="outline">Basic</Badge>
                   </div>
                   <p className="text-sm leading-relaxed text-muted-foreground">
