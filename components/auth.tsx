@@ -7,8 +7,7 @@ import {
   createUserWithEmailAndPassword, 
   signOut,
   GoogleAuthProvider,
-  signInWithRedirect,
-  getRedirectResult
+  signInWithPopup
 } from "firebase/auth";
 import { TriangleAlertIcon } from "lucide-react";
 
@@ -79,18 +78,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const clearAuthError = () => setAuthError(null);
 
   useEffect(() => {
-    // Process redirect result if returning from Google Sign-In
-    getRedirectResult(auth)
-      .then((result) => {
-        if (result) {
-          console.log("Successfully signed in via Google redirect:", result.user.email);
-        }
-      })
-      .catch((err) => {
-        console.error("Error during Google redirect sign-in:", err);
-        setAuthError(err instanceof Error ? err.message : String(err));
-      });
-
     try {
       const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
         if (firebaseUser) {
@@ -219,7 +206,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setLoading(true);
     try {
       const provider = new GoogleAuthProvider();
-      await signInWithRedirect(auth, provider);
+      await signInWithPopup(auth, provider);
     } catch (err) {
       console.warn(`[Firebase Auth] Google login failed: ${err instanceof Error ? err.message : String(err)}`);
       if (!isMockAllowed()) {

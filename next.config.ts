@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/__/auth/:path*",
-        destination: "https://simpleplek-9d373.firebaseapp.com/__/auth/:path*",
+        destination: "https://servy-f805f.firebaseapp.com/__/auth/:path*",
       },
     ];
   },
