@@ -1,0 +1,195 @@
+{
+  "packages": [
+    {
+      "id": "shack_stack",
+      "propertyId": "shack",
+      "price": 8500,
+      "name": "Three nights - The Shack",
+      "description": "Three night stack booking at the beautiful Llandudno Shack."
+    },
+    {
+      "id": "book_an_entire_week",
+      "propertyId": "shack",
+      "price": 18000,
+      "name": "A week at The Shack",
+      "description": "Enjoy a full seven-day retreat at The Shack."
+    },
+    {
+      "id": "long_weekend_at_the_Cottage",
+      "propertyId": "cottage",
+      "price": 9500,
+      "name": "Three nights - The Cottage",
+      "description": "A cozy 3-night weekend getaway at Llandudno Cottage."
+    },
+    {
+      "id": "entire_week_at_the_cottage",
+      "propertyId": "cottage",
+      "price": 20000,
+      "name": "Seven nights - The Cottage",
+      "description": "A full week of peace and relaxation at Llandudno Cottage."
+    },
+    {
+      "multiplier": 1.1,
+      "baseRate": 100,
+      "category": "standard",
+      "isEnabled": true,
+      "id": "pkg_2vshh3ioj",
+      "propertyId": "ocean-view-villa",
+      "name": "Standard Package",
+      "price": 4000,
+      "description": "Includes standard stay features."
+    },
+    {
+      "multiplier": 1,
+      "baseRate": 0,
+      "yocoId": "fdsfdsf",
+      "category": "standard",
+      "isEnabled": true,
+      "id": "fdsfdsf",
+      "propertyId": "shack",
+      "name": "fdsfdsf",
+      "price": 3443,
+      "description": ""
+    }
+  ],
+  "bookings": [
+    {
+      "paymentStatus": "pending",
+      "token": "sck6o6ltpw",
+      "propertyId": "ocean-view-villa",
+      "packageId": "pkg_2vshh3ioj",
+      "customerName": "Alice Smith",
+      "customerEmail": "alice@example.com",
+      "fromDate": "2026-06-16T00:00:00.000Z",
+      "toDate": "2026-06-19T00:00:00.000Z",
+      "total": 4000,
+      "id": "bk_yo7wht9q6"
+    },
+    {
+      "paymentStatus": "pending",
+      "token": "a5w5gqwkwxi",
+      "propertyId": "cottage",
+      "packageId": "long_weekend_at_the_Cottage",
+      "customerName": "james",
+      "customerEmail": "jmaclachlan@gmail.com",
+      "fromDate": "2026-06-16T00:00:00.000Z",
+      "toDate": "2026-06-19T00:00:00.000Z",
+      "total": 9500,
+      "id": "bk_673hysibd"
+    },
+    {
+      "paymentStatus": "pending",
+      "token": "o77biclwwb",
+      "propertyId": "shack",
+      "packageId": "shack_stack",
+      "customerName": "hello",
+      "customerEmail": "hello@thanks.digital",
+      "fromDate": "2026-07-16T00:00:00.000Z",
+      "toDate": "2026-07-19T00:00:00.000Z",
+      "total": 0,
+      "id": "bk_hjkb8d5ol"
+    },
+    {
+      "paymentStatus": "pending",
+      "token": "2ofa4w61x91",
+      "propertyId": "shack",
+      "packageId": "book_an_entire_week",
+      "customerName": "hello",
+      "customerEmail": "hello@thanks.digital",
+      "fromDate": "2026-07-20T00:00:00.000Z",
+      "toDate": "2026-07-30T00:00:00.000Z",
+      "total": 0,
+      "id": "bk_xot865ris"
+    }
+  ],
+  "userDates": {
+    "mock_user1": {
+      "fromDate": "2026-06-16T00:00:00.000Z",
+      "toDate": "2026-06-19T00:00:00.000Z"
+    },
+    "AVhjttIr8VfcnsEPIWYw7sgfnCG3": {
+      "fromDate": "2026-07-20T00:00:00.000Z",
+      "toDate": "2026-07-30T00:00:00.000Z"
+    },
+    "mock_admin_test_example_com": {
+      "fromDate": "2026-06-16T00:00:00.000Z",
+      "toDate": "2026-06-19T00:00:00.000Z"
+    }
+  },
+  "properties": [
+    {
+      "id": "shack",
+      "title": "The Shack",
+      "slug": "the-shack",
+      "basePricePerNight": 1650,
+      "airbnbCalendarUrl": "https://www.airbnb.co.za/calendar/ical/1667386340564933279.ics?t=test",
+      "googleCalendarUrl": ""
+    },
+    {
+      "id": "cottage",
+      "title": "The Cottage",
+      "slug": "the-cottage",
+      "basePricePerNight": 1200
+    },
+    {
+      "title": "Ocean View Villa",
+      "slug": "ocean-view-villa",
+      "basePricePerNight": 2200,
+      "id": "ocean-view-villa"
+    },
+    {
+      "title": "Camps Bay Sea View Loft",
+      "name": "Camps Bay Sea View Loft",
+      "slug": "camps-bay-sea-view-loft",
+      "basePricePerNight": 2450,
+      "airbnbCalendarUrl": "",
+      "googleCalendarUrl": "",
+      "hostId": "mock_admin_test_example_com",
+      "description": "A bright loft above the bay with wide ocean views.",
+      "images": [],
+      "bookingType": "hourly",
+      "slots": [
+        "10:00",
+        "14:00"
+      ],
+      "location": "Camps Bay, Cape Town",
+      "id": "camps-bay-sea-view-loft",
+      "createdAt": "2026-07-31T07:22:35.991Z",
+      "updatedAt": "2026-07-31T07:22:35.991Z"
+    },
+    {
+      "title": "Kalk Bay Harbour Cottage",
+      "name": "Kalk Bay Harbour Cottage",
+      "slug": "kalk-bay-harbour-cottage",
+      "basePricePerNight": 1890,
+      "airbnbCalendarUrl": "",
+      "googleCalendarUrl": "",
+      "hostId": "mock_admin_test_example_com",
+      "description": "",
+      "images": [],
+      "bookingType": "nightly",
+      "slots": [],
+      "location": "Kalk Bay, Cape Town",
+      "id": "kalk-bay-harbour-cottage",
+      "createdAt": "2026-07-31T07:45:10.440Z",
+      "updatedAt": "2026-07-31T07:45:10.440Z"
+    }
+  ],
+  "estimates": [
+    {
+      "paymentStatus": "pending",
+      "token": "rzy4edli2c",
+      "guests": [],
+      "createdAt": "2026-07-31T08:00:39.048Z",
+      "propertyId": "shack",
+      "packageId": "shack_stack",
+      "customerName": "admin",
+      "customerEmail": "admin+test@example.com",
+      "customerId": "mock_admin_test_example_com",
+      "fromDate": "2026-06-16T00:00:00.000Z",
+      "toDate": "2026-06-19T00:00:00.000Z",
+      "total": 13450,
+      "id": "est_pic5l154o"
+    }
+  ]
+}
