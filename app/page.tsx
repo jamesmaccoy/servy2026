@@ -384,9 +384,9 @@ function HomePageContent() {
             </>
           ) : (
             <>
-              <Badge variant="secondary">Surf Yoga Community</Badge>
+              <Badge variant="secondary">gig workers</Badge>
               <h1 className="font-heading text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-                Find Your Retreat
+                Find Your Pro
               </h1>
               <p className="max-w-md text-sm leading-relaxed text-muted-foreground text-pretty">
                 Sync your travel dates once, then browse every listing with live pricing for your stay.
@@ -489,7 +489,7 @@ function HomePageContent() {
                 </Field>
               ) : (
                 <Field className="flex-1">
-                  <FieldLabel htmlFor="nights">Nights</FieldLabel>
+                  <FieldLabel htmlFor="nights">Days</FieldLabel>
                   <Input
                     id="nights"
                     type="number"
@@ -611,7 +611,7 @@ function HomePageContent() {
                       )}
 
                       <Badge variant="secondary" className="absolute top-3 left-3">
-                        {isHourly ? "Hourly slot" : "Nightly stay"}
+                        {isHourly ? "Hourly slot" : "Per day"}
                       </Badge>
                     </div>
 
@@ -637,7 +637,7 @@ function HomePageContent() {
                           </span>
                           {savedDates && !isHourly && (
                             <Badge variant="outline">
-                              {nights} night{nights > 1 ? "s" : ""}
+                              {nights} day{nights > 1 ? "s" : ""}
                             </Badge>
                           )}
                         </div>
@@ -685,7 +685,7 @@ function HomePageContent() {
                         <span className="font-heading text-base font-semibold">
                           R {p.basePricePerNight.toLocaleString()}
                           <span className="text-sm font-normal text-muted-foreground">
-                            {isHourly ? "/slot" : "/night"}
+                            {isHourly ? "/slot" : "/day"}
                           </span>
                         </span>
                       </div>
