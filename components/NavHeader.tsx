@@ -57,9 +57,11 @@ export default function NavHeader() {
             <div className="flex items-center gap-3">
               <div className="hidden flex-col items-end gap-0.5 sm:flex">
                 <span className="text-sm font-medium leading-none">
-                  {user.displayName || user.email?.split("@")[0]}
+                  {user.displayName || user.email?.split("@")[0] || user.phoneNumber || "Account"}
                 </span>
-                <span className="text-xs leading-none text-muted-foreground">{user.email}</span>
+                <span className="text-xs leading-none text-muted-foreground">
+                  {user.email || user.phoneNumber}
+                </span>
               </div>
               <Button variant="outline" size="sm" onClick={logOut}>
                 Sign out
